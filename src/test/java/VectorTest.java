@@ -25,14 +25,14 @@ public class VectorTest {
         Vector vector = new Vector();
         double x = 0;
         double y = 0;
-        Assertions.assertEquals(0, vector.length(x, y), 1e-5);
+        Assertions.assertEquals(0, vector.length(), 1e-5);
     }
 
     @ParameterizedTest
     @MethodSource("vectorLengthCalculateProperlySource")
     public void vectorLengthShouldCalculateProperly(double x, double y, double expected) {
         Vector vector = new Vector();
-        double actual = vector.length(x, y);
+        double actual = vector.length();
         Assertions.assertEquals(expected, actual);
     }
 

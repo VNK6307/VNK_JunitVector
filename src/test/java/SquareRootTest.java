@@ -23,4 +23,4 @@ public class SquareRootTest {
             root.calcSquareRoot(a);
         });
     }
-}
+}// class
